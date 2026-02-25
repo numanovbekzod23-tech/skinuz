@@ -83,7 +83,7 @@ const CHANNEL_USERNAME = "your_channel";
 const CHANNEL_LINK = `https://t.me/${CHANNEL_USERNAME}`;
 const ADMIN_LINK = `https://t.me/${ADMIN_USERNAME}`;
 const BOT_USERNAME = "UzSkinBot";
-const BOT_TOKEN = "YOUR_BOT_TOKEN_HERE";
+const BOT_TOKEN = "8604922482:AAHbe89Fpr21RXvB8WjyQovzWYzCK2AxLPc";
 // ═════════════════════════════════════════
 
 // Telegram WebApp
@@ -247,7 +247,7 @@ const getRandomItem=(items)=>{
 };
 
 const notifyAdmin=async(text)=>{
-  if(!BOT_TOKEN||BOT_TOKEN==="YOUR_BOT_TOKEN_HERE")return;
+  if(!BOT_TOKEN||BOT_TOKEN==="8604922482:AAHbe89Fpr21RXvB8WjyQovzWYzCK2AxLPc")return;
   try{await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({chat_id:"@"+ADMIN_USERNAME,text,parse_mode:"HTML"})});}catch(e){}
 };
 
